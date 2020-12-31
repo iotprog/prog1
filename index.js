@@ -7,7 +7,7 @@ const app = express()
 const port = process.env.PORT || 4000
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
-var msgs;
+var msgs,body;
 app.post('/webhook', (req, res) => {
     let reply_token = req.body.events[0].replyToken
      msgs = req.body.events[0].message.text // message incoming
@@ -21,13 +21,11 @@ function reply(reply_token) {
         'Content-Type': 'application/json',
         'Authorization': 'Bearer {jzFv8VNiyxZHOgLSRyTbNyt2/gbcazscYCiKnu+1P8dAkhkTTPw0ztA+GAY2ZX0Gn6jnksu4JrUFiG9/2FMPiE4qavhKjg9NPIU7/xHFwUmTej+HfuyJiw3JsWlFhtcXmPrxWcCHrnJmAWcZ5LKIjAdB04t89/1O/w1cDnyilFU=}'
     }
-    if(msgs == "ที่ไหน"){
-        let body = JSON.stringify({
+    if(msgs.indexOf("ที่ไหน")){
+         body = JSON.stringify({
             replyToken: reply_token,
             messages: [{
-              
-            
-                "type": "location",
+              "type": "location",
                 "title": "บ้านสวน",
                 "address": "ที่กบดาน อิอิ", 
                 "latitude": 13.860480,
