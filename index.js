@@ -21,7 +21,7 @@ function reply(reply_token) {
         'Content-Type': 'application/json',
         'Authorization': 'Bearer {jzFv8VNiyxZHOgLSRyTbNyt2/gbcazscYCiKnu+1P8dAkhkTTPw0ztA+GAY2ZX0Gn6jnksu4JrUFiG9/2FMPiE4qavhKjg9NPIU7/xHFwUmTej+HfuyJiw3JsWlFhtcXmPrxWcCHrnJmAWcZ5LKIjAdB04t89/1O/w1cDnyilFU=}'
     }
-    if(msgs.indexOf("ที่ไหน")){
+    if(msgs == "ที่ไหน"){
          body = JSON.stringify({
             replyToken: reply_token,
             messages: [{
