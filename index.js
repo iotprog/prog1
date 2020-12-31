@@ -27,7 +27,15 @@ function reply(reply_token) {
         {
             type: 'text',
             text: 'How are you?'
-        }]
+        },
+        {
+            "type": "location",
+            "title": "บ้านสวน",
+            "address": "ที่กบดาน อิอิ", 
+            "latitude": 13.860480,
+            "longitude": 100.575768
+        }
+        ]
     })
     request.post({
         url: 'https://api.line.me/v2/bot/message/reply',
