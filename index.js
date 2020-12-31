@@ -43,15 +43,14 @@ function reply(reply_token) {
         },
         {
             type: 'text',
-            text: 'How are you?'
+            text: 'เราเป็น Bot งาน IOT'
         },
         {
-            "type": "location",
-            "title": "บ้านสวน",
-            "address": "ที่กบดาน อิอิ", 
-            "latitude": 13.860480,
-            "longitude": 100.575768
-        }
+            "type": "sticker",
+            "packageId": "11538",
+            "stickerId": "51626498"
+          }
+        
         ]
     })
   }
