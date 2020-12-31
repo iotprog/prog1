@@ -33,9 +33,9 @@ function reply(reply_token) {
             }
             ]
         })
-    }
+    }else{
 
-    let body = JSON.stringify({
+     body = JSON.stringify({
         replyToken: reply_token,
         messages: [{
             type: 'text',
@@ -54,7 +54,7 @@ function reply(reply_token) {
         }
         ]
     })
-
+  }
     request.post({
         url: 'https://api.line.me/v2/bot/message/reply',
         headers: headers,
