@@ -43,7 +43,11 @@ function reply(reply_token) {
         },
         {
             type: 'text',
-            text: 'เราเป็น Bot งาน IOT และ AI'
+            text: 'เราเป็น Bot รับงานทางด้าน IOT และ AI'
+        },
+        {
+            type: 'text',
+            text: 'http://rjkiot.42web.io'
         },
         {
             "type": "sticker",
