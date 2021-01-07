@@ -26,8 +26,8 @@ function reply(reply_token) {
             replyToken: reply_token,
             messages: [{
               "type": "location",
-                "title": "บ้านสวน",
-                "address": "ที่กบดาน อิอิ", 
+                "title": "บ้านสวน ตอนโดฯ",
+                "address": "สำนักงาน RJKIOT", 
                 "latitude": 13.860480,
                 "longitude": 100.575768
             }
@@ -43,7 +43,7 @@ function reply(reply_token) {
         },
         {
             type: 'text',
-            text: 'เราเป็น Bot งาน IOT'
+            text: 'เราเป็น Bot งาน IOT และ AI'
         },
         {
             "type": "sticker",
