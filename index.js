@@ -19,7 +19,7 @@ app.listen(port)
 function reply(reply_token) {
     let headers = {
         'Content-Type': 'application/json',
-        'Authorization': 'Bearer {jzFv8VNiyxZHOgLSRyTbNyt2/gbcazscYCiKnu+1P8dAkhkTTPw0ztA+GAY2ZX0Gn6jnksu4JrUFiG9/2FMPiE4qavhKjg9NPIU7/xHFwUmTej+HfuyJiw3JsWlFhtcXmPrxWcCHrnJmAWcZ5LKIjAdB04t89/1O/w1cDnyilFU=}'
+        'Authorization': 'Bearer {skA+kKmAPyUZSL2N2Vt8sj1NOk6QuGUkQjZbiKXQ7m+ii7P8EojDL4NpCHsDK9f4KGcG2p5wa3Mjn1s5Z3zcPvWrL1giDwVnLvUULOeVKIgQ9s6VOUJz3LCQrRAZGO53Dymsa5AHTBG5RQpSWFrYQwdB04t89/1O/w1cDnyilFU=}'
     }
     if(msgs == "ที่ไหน"){
          body = JSON.stringify({
